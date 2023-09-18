@@ -21,8 +21,8 @@ function useGames(gameQuery: GameQuery) {
       gameService.getAll({
         params: {
           page: pageParam,
-          genres: gameQuery.genre?.id,
-          parent_platforms: gameQuery.platform?.id,
+          genres: gameQuery.genreID,
+          parent_platforms: gameQuery.platformID,
           ordering: gameQuery.sortOrder,
           search: gameQuery.searchText,
         },
