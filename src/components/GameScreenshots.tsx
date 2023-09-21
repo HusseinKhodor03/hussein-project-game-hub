@@ -13,9 +13,9 @@ function GameScreenshots({ gameID }: GameScreenshotsProps) {
   if (error) throw error;
 
   return (
-    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4}>
+    <SimpleGrid columns={{ base: 1, md: 2 }} spacing="8px">
       {data?.results.map((file) => (
-        <Image borderRadius={10} key={file.id} src={file.image} />
+        <Image borderRadius="8px" key={file.id} src={file.image} />
       ))}
     </SimpleGrid>
   );
