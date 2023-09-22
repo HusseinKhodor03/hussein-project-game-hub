@@ -8,7 +8,16 @@ function NavBar() {
   return (
     <HStack padding="10px">
       <Link to="/">
-        <Image src={logo} boxSize="60px" objectFit="cover" />
+        <div
+          style={{
+            fontSize: "18px",
+            fontWeight: "900",
+            letterSpacing: "5px",
+            lineHeight: "1",
+          }}
+        >
+          RAWG
+        </div>
       </Link>
       <SearchInput />
       <ColorModeSwitch />
